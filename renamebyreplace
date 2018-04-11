@@ -1,0 +1,25 @@
+#!/usr/bin/python3
+import argparse
+import os
+_=str
+
+parser=argparse.ArgumentParser(_('Rename by replace'))
+parser.add_argument('--search', help='String to search', action='store')
+parser.add_argument('--replace', help='String to replace', action='store')
+parser.add_argument('--write', help='Renames the files', action='store_true', default=False)
+args=parser.parse_args()
+
+
+arrFrom=[]
+arrTo=[]
+files = os.listdir(os.getcwd())
+for file in files:
+    if file.find(args.search)!=-1:
+        arrFrom.append(file)
+        arrTo.append(file.replace(args.search,args.replace))
+
+for i in range(len(arrFrom)):
+    print ("{} ==> {}".format(arrFrom[i],arrTo[i]))
+    if args.write==True:
+        os.rename(arrFrom[i],arrTo[i])
+
