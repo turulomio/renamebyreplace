@@ -3,6 +3,14 @@ import argparse
 import os
 _=str
 
+def maxlenarr(arr):
+    r=0
+    for item in arr:
+        if len(item)>r:
+            r=len(item)
+    return r
+
+
 parser=argparse.ArgumentParser(_('Rename by replace'))
 parser.add_argument('--search', help='String to search', action='store')
 parser.add_argument('--replace', help='String to replace', action='store')
@@ -13,13 +21,17 @@ args=parser.parse_args()
 arrFrom=[]
 arrTo=[]
 files = os.listdir(os.getcwd())
+
+
+
 for file in files:
     if file.find(args.search)!=-1:
         arrFrom.append(file)
         arrTo.append(file.replace(args.search,args.replace))
 
+maxarr=maxlenarr(arrFrom)
 for i in range(len(arrFrom)):
-    print ("{} ==> {}".format(arrFrom[i],arrTo[i]))
+    print ("{} ==> {}".format(arrFrom[i].ljust(maxarr),arrTo[i]))
     if args.write==True:
         os.rename(arrFrom[i],arrTo[i])
 
