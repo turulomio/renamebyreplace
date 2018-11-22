@@ -7,7 +7,7 @@ import subprocess
 import gettext
 from ttyrecgenerator import RecSession
 import pkg_resources
-gettext.install('recpermissions', pkg_resources.resource_filename('recpermissions', 'locale'))
+gettext.install('renamebyreplace', pkg_resources.resource_filename('renamebyreplace', 'locale'))
 
 #We change permissions for the howto
 os.system("mkdir -p example")

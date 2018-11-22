@@ -1,6 +1,7 @@
 import argparse
 import gettext
 import os
+import pkg_resources
 
 try:
     t=gettext.translation('renamebyreplace', pkg_resources.resource_filename("renamebyreplace","locale"))
