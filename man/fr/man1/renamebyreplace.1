@@ -1,0 +1,151 @@
+.TH RECPERMISSIONS 1 2018\-11\-20
+.SH NAME
+
+.B RecPermissions:
+Changer le propri\('etaire et les permissions des fichiers et des r\('epertoires r\('ecursivement.
+.SH SYNOPSIS
+
+RecPermissions usage: recpermissions [\-h] [\-\-version] [\-\-user USER] [\-\-group GROUP]
+                      [\-\-files PERM] [\-\-directories PERM] [\-\-remove_emptydirs]
+                      [\-\-only]
+                      absolute_path
+.SH LA DESCRIPTION
+
+.PP
+Cette application a les paramètres obligatoires suivants :
+.PP
+.RS
+.B \-\-user
+.RE
+.PP
+.RS
+.RS
+Utilisateur utilis\('e pour changer le propri\('etaire des fichiers. Ca ne fait rien si ce n'est pas d\('efini
+.RE
+.RE
+.PP
+.RS
+.B \-\-group
+.RE
+.PP
+.RS
+.RS
+Groupe utilis\('e pour changer le groupe propri\('etaire des fichiers. Ca ne fait rien si ce n'est pas d\('efini
+.RE
+.RE
+.PP
+.RS
+.B \-\-files
+.RE
+.PP
+.RS
+.RS
+Permissions du fichier en octal à utiliser. Ca ne fait rien si ce n'est pas d\('efini
+.RE
+.RE
+.PP
+.RS
+.B \-\-directories
+.RE
+.PP
+.RS
+.RS
+Permissions du r\('epertoire en octal à utiliser. Ca ne fait rien si ce n'est pas d\('efini
+.RE
+.RE
+.PP
+.RS
+.B \-\-remove_emptydirs
+.RE
+.PP
+.RS
+.RS
+A l'utilisation par un script, retire r\('ecursivement tous les r\('epertoires vides dans le path.
+.RE
+.RE
+.PP
+.RS
+.B \-\-only
+.RE
+.PP
+.RS
+.RS
+Change seulement les permissions du fichier ou du r\('epertoire pass\('e dans le paramètre absolute_path.
+.RE
+.RE
+.PP
+.RS
+.B absolute_path
+.RE
+.PP
+.RS
+.RS
+Pour \('eviter les erreurs et les changements erron\('es, le path doit être absolu.
+.RE
+.RE
+.SH EXEMPLES
+
+.PP
+.RS
+.B Exemple nul
+.RE
+.PP
+.RS
+.RS
+recpermissions /home/user/
+.RE
+.RE
+.PP
+.RS
+.RS
+Cette commande ne fait rien
+.RE
+.RE
+.PP
+.RS
+.B Exemple partiel
+.RE
+.PP
+.RS
+.RS
+recpermissions \-\-user user \-\-files 644 /home/user/
+.RE
+.RE
+.PP
+.RS
+.RS
+Cette commande ne change à 644 que les permissions utilisateur et les permissions des fichiers. Les permissions de groupe et de r\('epertoire ne sont pas modifi\('ees :
+.RE
+.RE
+.PP
+.RS
+.B Exemple total
+.RE
+.PP
+.RS
+.RS
+recpermissions \-\-user root \-\-group root \-\-files 640 \-\-directories 750 \-\-remove_emptydirs /home/user/
+.RE
+.RE
+.PP
+.RS
+.RS
+Cette commande va transformer l'utilisateur et le groupe en utilisateur root et groupe root. Les fichiers auront les permissions rw\-r\-\-\-\-\- et les r\('epertoires auront les permissions rwxr\-x\-\-\-. Si le script trouve des r\('epertoires vides, il les enlèvera :
+.RE
+.RE
+.PP
+.RS
+.B Exemple de Only
+.RE
+.PP
+.RS
+.RS
+recpermissions \-\-user user /home/user/README.txt \-\-only
+.RE
+.RE
+.PP
+.RS
+.RS
+Cette commande ne changera la possession de l'utilisateur seulement du fichier /home/usr/README.txt
+.RE
+.RE

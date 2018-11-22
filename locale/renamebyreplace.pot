@@ -1,0 +1,183 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-20 06:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "New Release:"
+msgstr ""
+
+msgid "  * Change version and date in version.py"
+msgstr ""
+
+msgid "  * Edit Changelog in README"
+msgstr ""
+
+msgid "If changed restart from first python setup.py doc"
+msgstr ""
+
+msgid "  * Make a new tag in github"
+msgstr ""
+
+msgid "  * Create a new gentoo ebuild with the new version"
+msgstr ""
+
+msgid "  * Upload to portage repository"
+msgstr ""
+
+msgid "Uninstall command only works in Linux"
+msgstr ""
+
+msgid "DESCRIPTION"
+msgstr ""
+
+msgid "Change files and directories owner and permissions recursively."
+msgstr ""
+
+msgid "This app has the following mandatory parameters:"
+msgstr ""
+
+msgid "User used to change files owner."
+msgstr ""
+
+msgid "It does nothing if it's not set"
+msgstr ""
+
+msgid "Group used to change files owner group."
+msgstr ""
+
+msgid "File permissions in octal to be used."
+msgstr ""
+
+msgid "Directory permissions in octal to be used."
+msgstr ""
+
+msgid "When used in script, removes all empty dirs recursively from path."
+msgstr ""
+
+msgid "Only changes permissions to the file or directory passed in absolute_path parameter."
+msgstr ""
+
+msgid "To avoid errors and wrong changes, path must be an absolute one."
+msgstr ""
+
+msgid "EXAMPLES"
+msgstr ""
+
+msgid "Null Example"
+msgstr ""
+
+msgid "recpermissions /home/user/"
+msgstr ""
+
+msgid "This comand does nothing"
+msgstr ""
+
+msgid "Partial Example"
+msgstr ""
+
+msgid "recpermissions --user user --files 644 /home/user/"
+msgstr ""
+
+msgid "This command only changes user permissions and files permissions to 644. Group and directory permissions are not changed:"
+msgstr ""
+
+msgid "Full Example"
+msgstr ""
+
+msgid "recpermissions --user root --group root --files 640 --directories 750 --remove_emptydirs /home/user/"
+msgstr ""
+
+msgid "This command will change user and group to root user and group. Files will have rw-r----- permisions and directories rwxr-x--- permisions. If the script finds empty dirs it will remove them:"
+msgstr ""
+
+msgid "Only Example"
+msgstr ""
+
+msgid "recpermissions --user user /home/user/README.txt --only"
+msgstr ""
+
+msgid "This command will change user ownership to the file /home/usr/README.txt only"
+msgstr ""
+
+msgid "You need ttyrecgenerator installed to generate videos"
+msgstr ""
+
+msgid "Change Linux permissions and ownership in one step. It can delete empty directories when necessary."
+msgstr ""
+
+msgid "Developed by Mariano Muñoz 2018-{}"
+msgstr ""
+
+msgid "File owner will be changed to this parameter. It does nothing if it's not set."
+msgstr ""
+
+msgid "File owner group will be changed to this parameter. It does nothing if it's not set."
+msgstr ""
+
+msgid "File permissions to set in all files. It does nothing if it's not set."
+msgstr ""
+
+msgid "Directory permissions to set in all directories. It does nothing if it's not set."
+msgstr ""
+
+msgid "If it's established, removes empty directories recursivily from current path."
+msgstr ""
+
+msgid "Directory who is going to be changed permissions and owner recursivily"
+msgstr ""
+
+msgid "Path parameter must be an absolute one"
+msgstr ""
+
+msgid "Seems you gave a bad octal string in --files or --directories parameters. Use format 644 or 755 for example."
+msgstr ""
+
+msgid "RecPermissions summary:"
+msgstr ""
+
+msgid "Directories found: "
+msgstr ""
+
+msgid "Files found: "
+msgstr ""
+
+msgid "Directories changed: "
+msgstr ""
+
+msgid "Files changed: "
+msgstr ""
+
+msgid "Directories deleted: "
+msgstr ""
+
+msgid "{} error files:"
+msgstr ""
+
+msgid "This is a video to show how to use 'recpermissions' command"
+msgstr ""
+
+msgid "We list files with permissions and owners"
+msgstr ""
+
+msgid "We want to change them to root:root owner. Files to 640 permissions, directories to 750. We want to remove empty directories too, so we use:"
+msgstr ""
+
+msgid "We check the result"
+msgstr ""
+
+msgid "That's all"
+msgstr ""

@@ -1,0 +1,151 @@
+.TH RECPERMISSIONS 1 2018\-11\-20
+.SH NAME
+
+.B RecPermissions:
+Change files and directories owner and permissions recursively.
+.SH SYNOPSIS
+
+RecPermissions usage: recpermissions [\-h] [\-\-version] [\-\-user USER] [\-\-group GROUP]
+                      [\-\-files PERM] [\-\-directories PERM] [\-\-remove_emptydirs]
+                      [\-\-only]
+                      absolute_path
+.SH DESCRIPTION
+
+.PP
+This app has the following mandatory parameters:
+.PP
+.RS
+.B \-\-user
+.RE
+.PP
+.RS
+.RS
+User used to change files owner. It does nothing if it's not set
+.RE
+.RE
+.PP
+.RS
+.B \-\-group
+.RE
+.PP
+.RS
+.RS
+Group used to change files owner group. It does nothing if it's not set
+.RE
+.RE
+.PP
+.RS
+.B \-\-files
+.RE
+.PP
+.RS
+.RS
+File permissions in octal to be used. It does nothing if it's not set
+.RE
+.RE
+.PP
+.RS
+.B \-\-directories
+.RE
+.PP
+.RS
+.RS
+Directory permissions in octal to be used. It does nothing if it's not set
+.RE
+.RE
+.PP
+.RS
+.B \-\-remove_emptydirs
+.RE
+.PP
+.RS
+.RS
+When used in script, removes all empty dirs recursively from path.
+.RE
+.RE
+.PP
+.RS
+.B \-\-only
+.RE
+.PP
+.RS
+.RS
+Only changes permissions to the file or directory passed in absolute_path parameter.
+.RE
+.RE
+.PP
+.RS
+.B absolute_path
+.RE
+.PP
+.RS
+.RS
+To avoid errors and wrong changes, path must be an absolute one.
+.RE
+.RE
+.SH EXAMPLES
+
+.PP
+.RS
+.B Null Example
+.RE
+.PP
+.RS
+.RS
+recpermissions /home/user/
+.RE
+.RE
+.PP
+.RS
+.RS
+This comand does nothing
+.RE
+.RE
+.PP
+.RS
+.B Partial Example
+.RE
+.PP
+.RS
+.RS
+recpermissions \-\-user user \-\-files 644 /home/user/
+.RE
+.RE
+.PP
+.RS
+.RS
+This command only changes user permissions and files permissions to 644. Group and directory permissions are not changed:
+.RE
+.RE
+.PP
+.RS
+.B Full Example
+.RE
+.PP
+.RS
+.RS
+recpermissions \-\-user root \-\-group root \-\-files 640 \-\-directories 750 \-\-remove_emptydirs /home/user/
+.RE
+.RE
+.PP
+.RS
+.RS
+This command will change user and group to root user and group. Files will have rw\-r\-\-\-\-\- permisions and directories rwxr\-x\-\-\- permisions. If the script finds empty dirs it will remove them:
+.RE
+.RE
+.PP
+.RS
+.B Only Example
+.RE
+.PP
+.RS
+.RS
+recpermissions \-\-user user /home/user/README.txt \-\-only
+.RE
+.RE
+.PP
+.RS
+.RS
+This command will change user ownership to the file /home/usr/README.txt only
+.RE
+.RE

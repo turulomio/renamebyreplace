@@ -1,0 +1,151 @@
+.TH RECPERMISSIONS 1 2018\-11\-20
+.SH NAME
+
+.B RecPermissions:
+Cambia el propietario y los permisos de ficheros y directorios recursivamente.
+.SH SYNOPSIS
+
+RecPermissions usage: recpermissions [\-h] [\-\-version] [\-\-user USER] [\-\-group GROUP]
+                      [\-\-files PERM] [\-\-directories PERM] [\-\-remove_emptydirs]
+                      [\-\-only]
+                      absolute_path
+.SH DESCRIPCI\('ON
+
+.PP
+Esta aplicaci\('on tiene los siguientes par\('ametros obligatorios
+.PP
+.RS
+.B \-\-user
+.RE
+.PP
+.RS
+.RS
+Usuario usado para cambiar el propietario de los ficheros No hace nada si no se ha establecido
+.RE
+.RE
+.PP
+.RS
+.B \-\-group
+.RE
+.PP
+.RS
+.RS
+Grupo usado para cambiar el grupo del propietario del fichero No hace nada si no se ha establecido
+.RE
+.RE
+.PP
+.RS
+.B \-\-files
+.RE
+.PP
+.RS
+.RS
+Permisos del fichero en octal a usar No hace nada si no se ha establecido
+.RE
+.RE
+.PP
+.RS
+.B \-\-directories
+.RE
+.PP
+.RS
+.RS
+Permisos del directorio en octal a usar No hace nada si no se ha establecido
+.RE
+.RE
+.PP
+.RS
+.B \-\-remove_emptydirs
+.RE
+.PP
+.RS
+.RS
+Cuando se usa en el script, borra todos los directorios vacios rescursivamente desde la ruta
+.RE
+.RE
+.PP
+.RS
+.B \-\-only
+.RE
+.PP
+.RS
+.RS
+Solo cambia los permisos del fichero o directorio pasado en el par\('ametro absolute_path.
+.RE
+.RE
+.PP
+.RS
+.B absolute_path
+.RE
+.PP
+.RS
+.RS
+Para evitar errores y cambios err\('oneos, la ruta pasada debe ser absoluta
+.RE
+.RE
+.SH EJEMPLOS
+
+.PP
+.RS
+.B Ejemplo nulo
+.RE
+.PP
+.RS
+.RS
+recpermissions /home/user
+.RE
+.RE
+.PP
+.RS
+.RS
+Este comando no hace nada
+.RE
+.RE
+.PP
+.RS
+.B Ejemplo parcial
+.RE
+.PP
+.RS
+.RS
+recpermissions \-\-user user \-\-files 644 /home/user/
+.RE
+.RE
+.PP
+.RS
+.RS
+Este comando solo cambia el usuario y los permisos del fichero a 644. El grupo y los permisos de los directorios no son cambiados:
+.RE
+.RE
+.PP
+.RS
+.B Ejemplo completo
+.RE
+.PP
+.RS
+.RS
+recpermissions \-\-user root \-\-group root \-\-files 640 \-\-directories 750 \-\-remove_emptydirs /home/user/
+.RE
+.RE
+.PP
+.RS
+.RS
+Este comando cambiar\('a el usuario a 'root' y el grupo a 'root'. Los ficheros tendr\('an los permisos rw\-r\-\-\-\-\- y los directorios los permisos rwxr\-x\-\-\-. Si el script encontrara directorios vacios los borrar\('a:
+.RE
+.RE
+.PP
+.RS
+.B Ejemplo Only
+.RE
+.PP
+.RS
+.RS
+recpermissions \-\-user user /home/user/README.txt \-\-only
+.RE
+.RE
+.PP
+.RS
+.RS
+Este comando cambiar\('a \('unicamente el propietario del fichero /home/usr/README.txt
+.RE
+.RE

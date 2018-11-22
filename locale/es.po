@@ -1,0 +1,220 @@
+# Spanish translations for PACKAGE package
+# Traducciones al español para el paquete PACKAGE.
+# Copyright (C) 2018 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# root <turulomio@yahoo.es>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: RecPermissions\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-20 06:47+0100\n"
+"PO-Revision-Date: 2018-10-22 18:51+0100\n"
+"Last-Translator: root <turulomio@yahoo.es>\n"
+"Language-Team: Spanish\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "New Release:"
+msgstr "Nueva versión:"
+
+msgid "  * Change version and date in version.py"
+msgstr "  * Cambiar la versión y la fecha en version.py"
+
+msgid "  * Edit Changelog in README"
+msgstr "  * Modificar el Changelog en README"
+
+msgid "If changed restart from first python setup.py doc"
+msgstr "Si se cambia, reiniciar desde el primer 'python setup.py doc'"
+
+msgid "  * Make a new tag in github"
+msgstr "  * Hacer un nuevo tag en GitHub"
+
+msgid "  * Create a new gentoo ebuild with the new version"
+msgstr "  * Crea un nuevo ebuild de Gentoo con la nueva versión"
+
+msgid "  * Upload to portage repository"
+msgstr "  * Subelo al repositorio del portage"
+
+msgid "Uninstall command only works in Linux"
+msgstr "El comando 'uninstall' solo funciona en Linux"
+
+msgid "DESCRIPTION"
+msgstr "DESCRIPCIÓN"
+
+msgid "Change files and directories owner and permissions recursively."
+msgstr "Cambia el propietario y los permisos de ficheros y directorios recursivamente."
+
+msgid "This app has the following mandatory parameters:"
+msgstr "Esta aplicación tiene los siguientes parámetros obligatorios"
+
+msgid "User used to change files owner."
+msgstr "Usuario usado para cambiar el propietario de los ficheros"
+
+msgid "It does nothing if it's not set"
+msgstr "No hace nada si no se ha establecido"
+
+msgid "Group used to change files owner group."
+msgstr "Grupo usado para cambiar el grupo del propietario del fichero"
+
+msgid "File permissions in octal to be used."
+msgstr "Permisos del fichero en octal a usar"
+
+msgid "Directory permissions in octal to be used."
+msgstr "Permisos del directorio en octal a usar"
+
+msgid "When used in script, removes all empty dirs recursively from path."
+msgstr "Cuando se usa en el script, borra todos los directorios vacios rescursivamente desde la ruta"
+
+msgid "Only changes permissions to the file or directory passed in absolute_path parameter."
+msgstr "Solo cambia los permisos del fichero o directorio pasado en el parámetro absolute_path."
+
+msgid "To avoid errors and wrong changes, path must be an absolute one."
+msgstr "Para evitar errores y cambios erróneos, la ruta pasada debe ser absoluta"
+
+msgid "EXAMPLES"
+msgstr "EJEMPLOS"
+
+msgid "Null Example"
+msgstr "Ejemplo nulo"
+
+msgid "recpermissions /home/user/"
+msgstr "recpermissions /home/user"
+
+msgid "This comand does nothing"
+msgstr "Este comando no hace nada"
+
+msgid "Partial Example"
+msgstr "Ejemplo parcial"
+
+msgid "recpermissions --user user --files 644 /home/user/"
+msgstr "recpermissions --user user --files 644 /home/user/"
+
+msgid "This command only changes user permissions and files permissions to 644. Group and directory permissions are not changed:"
+msgstr "Este comando solo cambia el usuario y los permisos del fichero a 644. El grupo y los permisos de los directorios no son cambiados:"
+
+msgid "Full Example"
+msgstr "Ejemplo completo"
+
+msgid "recpermissions --user root --group root --files 640 --directories 750 --remove_emptydirs /home/user/"
+msgstr "recpermissions --user root --group root --files 640 --directories 750 --remove_emptydirs /home/user/"
+
+msgid "This command will change user and group to root user and group. Files will have rw-r----- permisions and directories rwxr-x--- permisions. If the script finds empty dirs it will remove them:"
+msgstr "Este comando cambiará el usuario a 'root' y el grupo a 'root'. Los ficheros tendrán los permisos rw-r----- y los directorios los permisos rwxr-x---. Si el script encontrara directorios vacios los borrará:"
+
+msgid "Only Example"
+msgstr "Ejemplo Only"
+
+msgid "recpermissions --user user /home/user/README.txt --only"
+msgstr "recpermissions --user user /home/user/README.txt --only"
+
+msgid "This command will change user ownership to the file /home/usr/README.txt only"
+msgstr "Este comando cambiará únicamente el propietario del fichero /home/usr/README.txt"
+
+msgid "You need ttyrecgenerator installed to generate videos"
+msgstr "Necesitas instalar 'ttyrecgenerator' para generar videos"
+
+msgid "Change Linux permissions and ownership in one step. It can delete empty directories when necessary."
+msgstr "Cambia los permisos y el propietario de Linux en un paso. Puede borrar directorios vacios cuando sea necesario."
+
+msgid "Developed by Mariano Muñoz 2018-{}"
+msgstr "Desarrollado por Mariano Muñoz 2018-{}"
+
+msgid "File owner will be changed to this parameter. It does nothing if it's not set."
+msgstr "El propietario del fichero será cambiado a este parámetro. No hace nada si no se establece."
+
+msgid "File owner group will be changed to this parameter. It does nothing if it's not set."
+msgstr "El grupo del propietario del fichero será cambiado a este parámetro. No hace nada si no se establece."
+
+msgid "File permissions to set in all files. It does nothing if it's not set."
+msgstr "Permisos del fichero a establecer en todos los ficheros. No hace nada si no se establece"
+
+msgid "Directory permissions to set in all directories. It does nothing if it's not set."
+msgstr "Permisos del directorio a establecer en todos los directorios. No hace nada si no se establece"
+
+msgid "If it's established, removes empty directories recursivily from current path."
+msgstr "Si se establece, borra todos los directorios vacios recursivamente desde la ruta actual."
+
+msgid "Directory who is going to be changed permissions and owner recursivily"
+msgstr "Directorio desde el que se van a cambiar permisos y propietario de forma recursiva"
+
+msgid "Path parameter must be an absolute one"
+msgstr "El parámetro debe ser una ruta absoluta"
+
+msgid "Seems you gave a bad octal string in --files or --directories parameters. Use format 644 or 755 for example."
+msgstr "Parece que has dado una cadena octal errónea en el parámetro --files o --directories. Usa el formato 644 o 755 por ejemplo."
+
+msgid "RecPermissions summary:"
+msgstr "Resumen de RecPermissions:"
+
+msgid "Directories found: "
+msgstr "Directorios encontrados: "
+
+msgid "Files found: "
+msgstr "Ficheros encontrados: "
+
+msgid "Directories changed: "
+msgstr "Directorios cambiados: "
+
+msgid "Files changed: "
+msgstr "Ficheros cambiados: "
+
+msgid "Directories deleted: "
+msgstr "Directorios borrados: "
+
+msgid "{} error files:"
+msgstr "{} errores en ficheros:"
+
+msgid "This is a video to show how to use 'recpermissions' command"
+msgstr "Este video muestra como usar el comando 'recpermissions'"
+
+msgid "We list files with permissions and owners"
+msgstr "Listamos los permisos y propietarios de los ficheros"
+
+msgid "We want to change them to root:root owner. Files to 640 permissions, directories to 750. We want to remove empty directories too, so we use:"
+msgstr "Queremos cambiarlos al propietario root:root. Los ficheros a los permisos 640 y los directorios a 750. Tambien queremos borrar los directorios vacios, por lo que usamos:"
+
+msgid "We check the result"
+msgstr "Comprobamos el resultado"
+
+msgid "That's all"
+msgstr "Eso es todo"
+
+#~ msgid "Seems you gave a bad octal string in --files and --directories parameters. Use format 644 or 766 for example."
+#~ msgstr "Parece que has dado una cadena octal errónea en el parámetro --files o --directories. Usa el formato 644 o 755 por ejemplo."
+
+#~ msgid "Search date and time patterns to delete innecesary files or directories"
+#~ msgstr "Busca patrónes de fecha y hora para borrar ficheros o directorios innecesarios"
+
+#~ msgid "Basic Example"
+#~ msgstr "Ejemplo básico"
+
+#~ msgid "This command does nothing. No parameter are set:"
+#~ msgstr "Este comando no hace nada. Ningún parámetro ha sido establecido:"
+
+#~ msgid "File permissions in octal to be used. 644 by default."
+#~ msgstr "Permisos de ficheros a usar en octal. 644 por defecto."
+
+#~ msgid "Directory permissions in octal to be used. 755 by default."
+#~ msgstr "Permisos de directorio a usar en octal. 755 por defecto."
+
+#~ msgid "This command will change user and group to current user and to current user main group. Files will have rw-r--r-- permisions and directories rwxr-xr-x permisions. If the script finds empty dirs it will NOT remove them:"
+#~ msgstr "Este comando cambiará el usuario y el grupo al usuario y grupo principal logueado. Los ficheros tendrán los permisos rw-r--r-- y los directorios rwxr-xr-x. Si el script encontrara directorios vacios NO los borrará:"
+
+#~ msgid "File owner will be changed to this parameter. Default user is '%(default)s'"
+#~ msgstr "El propietario del fichero será cambiado a este parámetro. El usuario por defecto es '%(default)s'"
+
+#~ msgid "File owner group will be changed to this parameter. The default value is '%(default)s'."
+#~ msgstr "El grupo propietario del fichero será cambiado a este parámetro. El valor por defecto es '%(default)s'"
+
+#~ msgid "File permissions to set in all files. The default value is '%(default)s'."
+#~ msgstr "Permisos para poner en todos los ficheros. El valor por defecto es '%(default)s'"
+
+#~ msgid "Directory permissions to set in all directories. The default value is '%(default)s'."
+#~ msgstr "Permisor para poner en todos los directorios. El valor por defecto es '%(default)s'"
+
+#~ msgid "{} empty dirs were removed"
+#~ msgstr "{} directorios vacios fueron borrados"
