@@ -1,4 +1,4 @@
-include LICENSE.txt *.py
+include LICENSE.txt *.py README.md
 recursive-include locale *.po 
 recursive-include renamebyreplace *.mo *.py *.png
 recursive-include man *.1

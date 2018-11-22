@@ -131,10 +131,10 @@ class Doc(Command):
         man.paragraph("If you want to write changes in filesystem you must add --write parameter", 2)
         man.header(_("EXAMPLES"), 1)
         man.paragraph(_("Pretend example"), 2, True)
-        man.paragraph(_("renamebyreplace --search ABCD --replace Abcd"), 3)
+        man.paragraph("renamebyreplace --search ABCD --replace Abcd", 3)
         man.paragraph(_("This comand pretends the renaming"), 3)
         man.paragraph(_("Write Example"), 2, True)
-        man.paragraph(_("renamebyreplace --search ABCD --replace Abcd --writes"), 3)
+        man.paragraph("renamebyreplace --search ABCD --replace Abcd --writes", 3)
         man.paragraph(_("This comand makes the renaming"), 3)
         man.save()
 
@@ -171,8 +171,8 @@ with open('README.md', encoding='utf-8') as f:
 
 if platform.system()=="Linux":
     data_files=[('/usr/share/man/man1/', ['man/man1/renamebyreplace.1']),
-                ('/usr/share/man/es/man1/', ['man/es/man1/renamebyreplace.1'])
-                ('/usr/share/man/fr/man1/', ['man/fr/man1/renamebyreplace.1'])
+                ('/usr/share/man/es/man1/', ['man/es/man1/renamebyreplace.1']),
+                ('/usr/share/man/fr/man1/', ['man/fr/man1/renamebyreplace.1']),
                ]
 else:
     data_files=[]
