@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: RecPermissions\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-22 05:58+0100\n"
+"POT-Creation-Date: 2019-02-01 19:26+0100\n"
 "PO-Revision-Date: 2018-11-03 07:11+0100\n"
 "Last-Translator: root <turulomio@yahoo.es>\n"
 "Language-Team: French\n"
@@ -53,6 +53,9 @@ msgstr ""
 msgid "Replace search substring with this substring"
 msgstr ""
 
+msgid "Uses the --search argument as the --replace one and the --replace argument as the --search one"
+msgstr ""
+
 msgid "EXAMPLES"
 msgstr "EXEMPLES"
 
@@ -81,6 +84,9 @@ msgid "String to replace"
 msgstr ""
 
 msgid "Renames the files"
+msgstr ""
+
+msgid "Undo replace command"
 msgstr ""
 
 msgid "Changes have been made ;)."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-22 06:29+0100\n"
+"POT-Creation-Date: 2019-02-01 19:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,6 +53,9 @@ msgstr ""
 msgid "Replace search substring with this substring"
 msgstr ""
 
+msgid "Uses the --search argument as the --replace one and the --replace argument as the --search one"
+msgstr ""
+
 msgid "EXAMPLES"
 msgstr ""
 
@@ -81,6 +84,9 @@ msgid "String to replace"
 msgstr ""
 
 msgid "Renames the files"
+msgstr ""
+
+msgid "Undo replace command"
 msgstr ""
 
 msgid "Changes have been made ;)."

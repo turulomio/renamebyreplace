@@ -1,11 +1,11 @@
-.TH RENAMEBYREPLACE 1 2018\-11\-22
+.TH RENAMEBYREPLACE 1 2019\-02\-01
 .SH NAME
 
 .B renamebyreplace:
 Renombra ficheros sustituyendo cadenas en el nombre del fichero
 .SH SYNOPSIS
 
-renamebyreplace usage: renamebyreplace [\-h] [\-\-search SEARCH] [\-\-replace REPLACE] [\-\-write]
+renamebyreplace usage: renamebyreplace [\-h] [\-\-search SEARCH] [\-\-replace REPLACE] [\-\-write] [\-\-undo]
 .SH DESCRIPCI\('ON
 
 .PP
@@ -30,6 +30,12 @@ Busca esta cadena en el nombre del fichero
 Sustituye la cadena buscada con esta otra
 .RE
 .RE
+.PP
+.RS
+.B \-\-undo
+.RE
+.PP
+Uses the \-\-search argument as the \-\-replace one and the \-\-replace argument as the \-\-search one
 .PP
 .RS
 If you want to write changes in filesystem you must add \-\-write parameter

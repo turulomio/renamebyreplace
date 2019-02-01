@@ -15,15 +15,14 @@ Doxygen documentation:
     http://turulomio.users.sourceforge.net/doxygen/renamebyreplace/
 
 Main developer web page:
-    http://turulomio.users.sourceforge.net/en/proyectos.html
-    https://github.com/Turulomio
+    https://github.com/turulomio
 
 Pypi web page:
     https://pypi.org/project/renamebyreplace/
-    
+
 Installation in Linux
 =====================
-If you use Gentoo, you can find a ebuild in https://github.com/Turulomio/myportage/tree/master/app-admin/renamebyreplace
+If you use Gentoo, you can find a ebuild in https://github.com/turulomio/myportage/tree/master/app-admin/renamebyreplace
 
 With other distributions you can:
 
@@ -43,6 +42,10 @@ Dependencies
 
 Changelog
 =========
+0.2.0
+-----
+  * Added --undo argument
+
 0.1.0
 -----
   * Creating infrastructure

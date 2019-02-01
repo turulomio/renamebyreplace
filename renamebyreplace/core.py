@@ -22,11 +22,17 @@ def main(parameters=None):
     parser.add_argument('--search', help=_('String to search'), action='store', required=True)
     parser.add_argument('--replace', help=_('String to replace'), action='store', required=True)
     parser.add_argument('--write', help=_('Renames the files'), action='store_true', default=False)
+    parser.add_argument('--undo', help=_('Undo replace command'), action='store_true', default=False)
     args=parser.parse_args(parameters)
 
     arrFrom=[]
     arrTo=[]
     files = os.listdir(os.getcwd())
+
+    if args.undo==True:
+        tmp=args.search
+        args.search=args.replace
+        args.replace=tmp
 
     for file in files:
         if file.find(args.search)!=-1:
