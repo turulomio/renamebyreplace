@@ -1,4 +1,4 @@
-# RenameByReplace
+# RenameByReplace (https://github.com/turulomio/renamebyreplace/)
 
 [![Tests](https://github.com/turulomio/renamebyreplace/actions/workflows/tests.yml/badge.svg)](https://github.com/turulomio/renamebyreplace/actions/workflows/tests.yml)
 
@@ -9,6 +9,11 @@ Rename files searching substrings in filenames.
 `renamebyreplace` is a Python utility that allows you to bulk rename files by searching for a specific substring and replacing it with another. It is designed to be safe by default, offering a preview of changes before applying them.
 
 ## Installation
+
+### From Gentoo
+
+If you use Gentoo you can find a ebuild in https://github.com/turulomio/myportage/tree/master/app-admin/renamebyreplace
+
 
 ### From PyPI
 
@@ -26,21 +31,14 @@ cd renamebyreplace
 poetry install
 ```
 
+
 ## Usage
+<img src="https://raw.githubusercontent.com/turulomio/renamebyreplace/master/doc/command.gif?raw=true" width="100%"></img>
 
-The basic syntax requires a search string and a replacement string:
+You can see this animated gif to learn how to use it:
 
-```bash
-renamebyreplace --search "old_text" --replace "new_text"
-```
+<img src="https://raw.githubusercontent.com/turulomio/renamebyreplace/master/doc/howto.gif?raw=true" width="100%"></img>
 
-By default, this runs in **dry-run** mode, printing the changes that would occur without modifying the file system.
-
-To apply the changes, use the `--write` flag:
-
-```bash
-renamebyreplace --search "old_text" --replace "new_text" --write
-```
 
 ## Development
 
@@ -49,11 +47,3 @@ This project uses `poethepoet` for task management.
 - **Run Tests & Coverage**: `poe coverage`
 - **Update Translations**: `poe translate`
 - **Release**: `poe release`
-
-## License
-
-This project is licensed under the GPL-3 License.
-
-## Authors
-
-* Turulomio <turulomio@yahoo.es>

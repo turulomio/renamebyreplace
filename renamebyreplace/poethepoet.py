@@ -1,5 +1,6 @@
 from renamebyreplace import _, __version__
-from os import system
+from os import system, chdir, remove
+from shutil import which
 
 
 def release():
@@ -10,6 +11,8 @@ def release():
     print("  * poe translate")
     print("  * mcedit locale/es.po")
     print("  * poe translate")
+    print("  * poe video")
+    print("  * poe coverage")
     print("  * git commit -a -m 'renamebyreplace-{}'".format(__version__))
     print("  * git push")
     print(_("  * Make a pull request to main branch"))
@@ -31,46 +34,14 @@ def coverage():
     system("coverage run -m pytest && coverage report && coverage html")
 
 def video():
-    print(_("You need ttyrecgenerator installed to generate videos"))
-    # chdir("doc/ttyrec")
-    # system("ttyrecgenerator --output renamebyreplace_howto_es 'python3 howto.py' --lc_all es_ES.UTF-8")
-    # system("ttyrecgenerator --output renamebyreplace_howto_en 'python3 howto.py' --lc_all C")
-    # chdir("../..")
+    # Comprobaciones
+    vhs=which("vhs")
+    if vhs is None: 
+        print(_("vhs tool is needed. Look at https://github.com/charmbracelet/vhs"))
+        exit(1)
 
+    chdir("doc")
+    system(f"{vhs} command.tape")
+    system(f"{vhs} howto.tape")
+    system("rm *.mp4")
 
-    # _=gettext.gettext#To avoid warnings
-    # #!/usr/bin/python3
-    # import argparse
-    # import time
-    # import colorama
-    # import os
-    # import subprocess
-    # import gettext
-    # from ttyrecgenerator import RecSession
-    # import pkg_resources
-    # gettext.install('renamebyreplace', pkg_resources.resource_filename('renamebyreplace', 'locale'))
-
-    # #We change permissions for the howto
-    # system("mkdir -p example")
-    # system("touch 'example/MyFavoriteFilm 1.mkv'")
-    # system("touch 'example/MyFavoriteFilm 2.mkv'")
-    # system("touch 'example/MyFavoriteFilm 3.mkv'")
-    # chdir("example")
-
-    # r=RecSession()
-    # r.comment("# " + _("This is a video to show how to use 'renamebyreplace' command"))
-    # r.comment("# " + _("We list files in our example directory"))
-    # r.command("ls -la")
-
-    # r.comment("# " + _("We want to rename files to MySecondFavoriteFilm in all files:"))
-    # r.command("renamebyreplace --search MyFavoriteFilm --replace MySecondFavoriteFilm")
-    # r.comment("# " + _("We like the pretended output so we want to make the changes:"))
-    # r.command("renamebyreplace --search MyFavoriteFilm --replace MySecondFavoriteFilm --write")
-    # r.comment("# " + _("We check the result:"))
-    # r.command("ls -la")
-    # r.comment("# " + _("That's all"))
-    # time.sleep(20)
-    # r.comment("# ")
-    # #We remove example
-    # chdir("..")
-    # system("rm -Rf example")
