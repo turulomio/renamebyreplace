@@ -34,11 +34,11 @@ def create_file(name):
     with open(name, "w") as f:
         f.write(name)
 
-def test_renamebyreplace():
+def test_renamebyreplace(test_fs):
     chdir(test_fs["test_dir"])
     renamebyreplace("a", "b", True, False)
-    assert path.exists("b")
-    assert not path.exists("a")
+    assert path.exists(test_fs["b"])
+    assert not path.exists(test_fs["a"])
 
 # def test_main_recpermissions_no_args(monkeypatch):
 #     """Test that main_recpermissions exits when no arguments are provided."""
