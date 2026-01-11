@@ -48,6 +48,7 @@ def create_file(name):
         f.write(name)
 
 def test_renamebyreplace():
+    chdir(test_fs["test_dir"])
     renamebyreplace("a", "b", True, False)
     assert path.exists("b")
     assert not path.exists("a")
