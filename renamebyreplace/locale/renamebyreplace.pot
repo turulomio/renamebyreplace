@@ -8,73 +8,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-01 19:27+0100\n"
+"POT-Creation-Date: 2026-01-11 06:46+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "New Release:"
-msgstr ""
-
-msgid "  * Change version and date in version.py"
-msgstr ""
-
-msgid "  * Edit Changelog in README"
-msgstr ""
-
-msgid "If changed restart from first python setup.py doc"
-msgstr ""
-
-msgid "  * Make a new tag in github"
-msgstr ""
-
-msgid "  * Create a new gentoo ebuild with the new version"
-msgstr ""
-
-msgid "  * Upload to portage repository"
-msgstr ""
-
-msgid "DESCRIPTION"
-msgstr ""
-
-msgid "Rename files replacing subtrings in filename"
-msgstr ""
-
-msgid "This app has the following mandatory parameters:"
-msgstr ""
-
-msgid "Search this substring in the filename"
-msgstr ""
-
-msgid "Replace search substring with this substring"
-msgstr ""
-
-msgid "Uses the --search argument as the --replace one and the --replace argument as the --search one"
-msgstr ""
-
-msgid "EXAMPLES"
-msgstr ""
-
-msgid "Pretend example"
-msgstr ""
-
-msgid "This comand pretends the renaming"
-msgstr ""
-
-msgid "Write Example"
-msgstr ""
-
-msgid "This comand makes the renaming"
-msgstr ""
-
-msgid "You need ttyrecgenerator installed to generate videos"
-msgstr ""
-
-msgid "Rename by replace"
+msgid "Rename files searching substrings in filenames"
 msgstr ""
 
 msgid "String to search"
@@ -92,20 +35,32 @@ msgstr ""
 msgid "Changes have been made ;)."
 msgstr ""
 
-msgid "This is a video to show how to use 'renamebyreplace' command"
+msgid "Developed by Mariano Muñoz 2018-{}"
 msgstr ""
 
-msgid "We list files in our example directory"
+msgid "New Release:"
 msgstr ""
 
-msgid "We want to rename files to MySecondFavoriteFilm in all files:"
+msgid "  * Create a new issue and its branch in Github"
 msgstr ""
 
-msgid "We like the pretended output so we want to make the changes:"
+msgid "  * Change to this branch pasting suggested code in Github"
 msgstr ""
 
-msgid "We check the result:"
+msgid "  * Change version and date in __init__.py"
 msgstr ""
 
-msgid "That's all"
+msgid "  * Make a pull request to main branch"
+msgstr ""
+
+msgid "  * Make a new tag in github"
+msgstr ""
+
+msgid "  * Create a new gentoo ebuild with the new version and install it"
+msgstr ""
+
+msgid "  * Upload to portage repository"
+msgstr ""
+
+msgid "You need ttyrecgenerator installed to generate videos"
 msgstr ""

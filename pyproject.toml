@@ -23,10 +23,8 @@ build-backend = "poetry.core.masonry.api"
 renamebyreplace = "renamebyreplace.core:main"
 
 [tool.poe.tasks]
-module_content = { script = "renamebyreplace.poethepoet:module_content" }
 coverage = { script = "renamebyreplace.poethepoet:coverage" }
 video = { script = "renamebyreplace.poethepoet:video" }
-man = { script = "renamebyreplace.poethepoet:man" }
 pytest = { script = "renamebyreplace.poethepoet:pytest" }
 release = { script = "renamebyreplace.poethepoet:release" }
 translate = { script = "renamebyreplace.poethepoet:translate" }
