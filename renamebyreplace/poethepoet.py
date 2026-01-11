@@ -7,7 +7,7 @@ def release():
     print(_("New Release:"))
     print (_("  * Create a new issue and its branch in Github"))
     print (_("  * Change to this branch pasting suggested code in Github"))
-    print(_("  * Change version and date in __init__.py"))
+    print(_("  * Change version and date in __init__.py and in pyproject.ml"))
     print("  * poe translate")
     print("  * mcedit locale/es.po")
     print("  * poe translate")

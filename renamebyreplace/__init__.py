@@ -1,7 +1,8 @@
 from gettext import translation
-from datetime import date
-__version__ = '0.2.0'
-__versiondate__=date(2026, 1, 11)
+from datetime import datetime
+__version__ = '1.0.0'
+__versiondatetime__=datetime(2026, 1, 11,7,39)
+__versiondate__=__versiondatetime__.date()
 from importlib.resources import files
 
 try:

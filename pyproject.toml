@@ -1,6 +1,6 @@
 [project]
 name = "renamebyreplace"
-version = "0.2.0"
+version = "1.0.0"
 description = "Rename files searching substrings in filenames"
 authors = [{name = "turulomio", email = "turulomio@yahoo.es"}]
 license = "GPL-3"
