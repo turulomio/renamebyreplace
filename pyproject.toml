@@ -1,0 +1,37 @@
+[project]
+name = "renamebyreplace"
+version = "0.2.0"
+description = "Rename files searching substrings in filenames"
+authors = [{name = "turulomio", email = "turulomio@yahoo.es"}]
+license = "GPL-3"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "colorama>=0.4.6",
+]
+
+[tool.poetry.group.dev.dependencies]
+poethepoet = ">=0.24.2"
+pytest = ">=7.4.3"
+coverage = ">=7.3.2"
+
+[build-system]
+requires = ["poetry-core>=2.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[project.scripts]
+renamebyreplace = "renamebyreplace.renamebyreplace:main"
+
+[tool.poe.tasks]
+module_content = { script = "renamebyreplace.poethepoet:module_content" }
+coverage = { script = "renamebyreplace.poethepoet:coverage" }
+video = { script = "renamebyreplace.poethepoet:video" }
+man = { script = "renamebyreplace.poethepoet:man" }
+pytest = { script = "renamebyreplace.poethepoet:pytest" }
+release = { script = "renamebyreplace.poethepoet:release" }
+translate = { script = "renamebyreplace.poethepoet:translate" }
+
+[project.urls]
+homepage = "https://github.com/turulomio/renamebyreplace/"
+repository = "https://github.com/turulomio/renamebyreplace/"
+changelog = "https://github.com/turulomio/renamebyreplace#changelog"
