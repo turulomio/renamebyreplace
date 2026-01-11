@@ -1,51 +1,59 @@
-Usage
-=====
+# RenameByReplace
 
-Here you have a console video example:
+[![Tests](https://github.com/turulomio/renamebyreplace/actions/workflows/tests.yml/badge.svg)](https://github.com/turulomio/renamebyreplace/actions/workflows/tests.yml)
 
-![English howto](https://raw.githubusercontent.com/Turulomio/renamebyreplace/master/doc/ttyrec/renamebyreplace_howto_en.gif)
+Rename files searching substrings in filenames.
 
-Once installed, in Linux you can see man documentation with
+## Description
 
-`man renamebyreplace`
+`renamebyreplace` is a Python utility that allows you to bulk rename files by searching for a specific substring and replacing it with another. It is designed to be safe by default, offering a preview of changes before applying them.
 
-Links
-=====
-Doxygen documentation:
-    http://turulomio.users.sourceforge.net/doxygen/renamebyreplace/
+## Installation
 
-Main developer web page:
-    https://github.com/turulomio
+### From PyPI
 
-Pypi web page:
-    https://pypi.org/project/renamebyreplace/
+```bash
+pip install renamebyreplace
+```
 
-Installation in Linux
-=====================
-If you use Gentoo, you can find a ebuild in https://github.com/turulomio/myportage/tree/master/app-admin/renamebyreplace
+### From Source
 
-With other distributions you can:
+This project uses Poetry (version 2.0+) for dependency management.
 
-`pip install renamebyreplace`
+```bash
+git clone https://github.com/turulomio/renamebyreplace/
+cd renamebyreplace
+poetry install
+```
 
-Installation in Windows
-=======================
-Install python from https://www.python.org/
+## Usage
 
-Enter in a Windows shell and type:
+The basic syntax requires a search string and a replacement string:
 
-`pip install renamebyreplace`
+```bash
+renamebyreplace --search "old_text" --replace "new_text"
+```
 
-Dependencies
-============
-* https://www.python.org/, as the main programming language.
+By default, this runs in **dry-run** mode, printing the changes that would occur without modifying the file system.
 
-Changelog
-=========
-0.2.0
------
-  * Added --undo argument
+To apply the changes, use the `--write` flag:
 
-0.1.0
------
-  * Creating infrastructure
+```bash
+renamebyreplace --search "old_text" --replace "new_text" --write
+```
+
+## Development
+
+This project uses `poethepoet` for task management.
+
+- **Run Tests & Coverage**: `poe coverage`
+- **Update Translations**: `poe translate`
+- **Release**: `poe release`
+
+## License
+
+This project is licensed under the GPL-3 License.
+
+## Authors
+
+* Turulomio <turulomio@yahoo.es>

@@ -34,6 +34,11 @@ def test_renamebyreplace(test_fs):
     renamebyreplace("a", "b", True, False)
     assert path.exists(test_fs["b"])
     assert not path.exists(test_fs["a"])
+    #Undo
+    renamebyreplace("a", "b", True, True)
+    assert path.exists(test_fs["a"])
+    assert not path.exists(test_fs["b"]) #In this example b is lost
+
 
 def test_main_with_no_args(monkeypatch):
     """Test that main exits when no arguments are provided."""
