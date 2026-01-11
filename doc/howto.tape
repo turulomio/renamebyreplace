@@ -62,23 +62,18 @@ Require echo
 Set Shell "bash"
 Set FontSize 14
 Set Width 1200
-Set Height 800
+Set Height 500
 Set WindowBar Colorful
 
 # Espera un segundo para que la terminal aparezca
 Sleep 1s
-Type "# This is a video to show how to use 'toomanyfiles' command" Sleep 1s Enter
-Type "# We have a directory with 100 files that have a time pattern '%Y%m%d %H%M' with a day variation" Sleep 1s Enter
-Type "# We are going to see the 5 last files of this directory" Sleep 1s Enter
-Type "ls -la | tail -n 5" Sleep 1s Enter
-Type "# We use to find this kind of files in automatic backups, logs, ..." Sleep 1s Enter
-Type "# If you want to save our disk space and you want to keep some of them, you can use TooManyFiles program" Sleep 1s Enter
-Type "# So, you want to keep the last 5 files because they are too recent." Sleep 1s Enter
-Type "# And, you want to keep the first file of each month from the rest of the files until a max number the files of 15." Sleep 1s Enter
-Type "toomanyfiles --too_young_to_delete 5 --max_files_to_store 15 --time_pattern '%Y%m%d %H%M' --remove" Sleep 1s Enter
-Sleep 5s
-Type "ls -la" Sleep 1s Enter
-Type "You can use other parameters like --list or --pretend before --remove to check files to delete" Sleep 10s Enter
-
+Type "# This is a video to show how to use 'renamebyreplace' command" Sleep 1s Enter
+Type "# We are going to create two files" Sleep 1s Enter
+Type "touch FILM1.mp4" Sleep 1s Enter
+Type "touch FILM2.mp4" Sleep 1s Enter
+Type "ls -la *.mp4" Sleep 1s Enter
+Type "renamebyreplace --search 'FILM' --replace 'MOVIE' --write" Sleep 1s Enter
+Type "ls -la *.mp4" Sleep 1s Enter
+Type "You can omit --write to pretend" Sleep 10s Enter
 
 

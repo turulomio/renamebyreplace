@@ -62,12 +62,12 @@ Require echo
 Set Shell "bash"
 Set FontSize 14
 Set Width 1200
-Set Height 700
+Set Height 400
 Set WindowBar Colorful
 
 # Espera un segundo para que la terminal aparezca
 Sleep 1s
-Type "toomanyfiles --help" Enter
+Type "renamebyreplace --help" Enter
 Sleep 10s
 
 

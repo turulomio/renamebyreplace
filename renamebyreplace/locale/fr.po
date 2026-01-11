@@ -29,8 +29,8 @@ msgstr "Chaîne de remplacement"
 msgid "Renames the files"
 msgstr "Renomme les fichiers"
 
-msgid "Undo replace command"
-msgstr "Annuler la commande de remplacement"
+msgid "Undo replace command (Use with caution. It will fail if you overwrite files while renaming them)"
+msgstr "Annuler la commande de remplacement (À utiliser avec prudence. Cela échouera si vous écrasez des fichiers lors de leur renommage)"
 
 msgid "Changes have been made ;)."
 msgstr "Les modifications ont été effectuées ;)."
@@ -62,5 +62,5 @@ msgstr "  * Créer un nouvel ebuild Gentoo avec la nouvelle version et l'install
 msgid "  * Upload to portage repository"
 msgstr " * Uploader au dépôt de portage"
 
-msgid "You need ttyrecgenerator installed to generate videos"
-msgstr "Il faut installer ttyrecgenerator pour générer des vidéos"
+msgid "vhs tool is needed. Look at https://github.com/charmbracelet/vhs"
+msgstr "L'outil vhs est nécessaire. Voir https://github.com/charmbracelet/vhs"
