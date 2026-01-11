@@ -1,5 +1,5 @@
 from argparse import ArgumentParser
-from . import _
+from . import _, epilog
 from os import listdir, getcwd, rename
 
 def maxlenarr(arr):
@@ -11,7 +11,7 @@ def maxlenarr(arr):
 
 ## @param parameters is a list. For example ['--search',]
 def main():
-    parser=ArgumentParser(_('Rename by replace'))
+    parser=ArgumentParser(_('Rename files searching substrings in filenames' ), epilog=epilog())
     parser.add_argument('--search', help=_('String to search'), action='store', required=True)
     parser.add_argument('--replace', help=_('String to replace'), action='store', required=True)
     parser.add_argument('--write', help=_('Renames the files'), action='store_true', default=False)

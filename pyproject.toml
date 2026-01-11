@@ -20,7 +20,7 @@ requires = ["poetry-core>=2.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [project.scripts]
-renamebyreplace = "renamebyreplace.renamebyreplace:main"
+renamebyreplace = "renamebyreplace.core:main"
 
 [tool.poe.tasks]
 module_content = { script = "renamebyreplace.poethepoet:module_content" }
