@@ -1,0 +1,61 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: renamebyreplace 0.2.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-11 06:43+0100\n"
+"PO-Revision-Date: 2026-01-11 06:45+0100\n"
+"Last-Translator: Turulomio <turulomio@yahoo.es>\n"
+"Language-Team: Spanish\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Rename files searching substrings in filenames"
+msgstr "Renombra ficheros buscando subcadenas en los nombres"
+
+msgid "String to search"
+msgstr "Cadena a buscar"
+
+msgid "String to replace"
+msgstr "Cadena a reemplazar"
+
+msgid "Renames the files"
+msgstr "Renombra los ficheros"
+
+msgid "Undo replace command"
+msgstr "Deshace el comando de reemplazo"
+
+msgid "Changes have been made ;)."
+msgstr "Los cambios se han realizado ;)."
+
+msgid "Developed by Mariano Muñoz 2018-{}"
+msgstr "Desarrollado por Mariano Muñoz 2018-{}"
+
+msgid "New Release:"
+msgstr "Nueva versión:"
+
+msgid "  * Create a new issue and its branch in Github"
+msgstr "  * Crea una nueva incidencia y su rama en Github"
+
+msgid "  * Change to this branch pasting suggested code in Github"
+msgstr "  * Cambia a esta rama pegando el código sugerido en Github"
+
+msgid "  * Change version and date in __init__.py"
+msgstr "  * Cambia la versión y la fecha en __init__.py"
+
+msgid "  * Make a pull request to main branch"
+msgstr "  * Haz un pull request a la rama main"
+
+msgid "  * Make a new tag in github"
+msgstr "  * Hacer un nuevo tag en GitHub"
+
+msgid "  * Create a new gentoo ebuild with the new version and install it"
+msgstr "  * Crea un nuevo ebuild de gentoo con la nueva versión e instálalo"
+
+msgid "  * Upload to portage repository"
+msgstr "  * Subelo al repositorio del portage"
+
+msgid "You need ttyrecgenerator installed to generate videos"
+msgstr "Necesitas instalar 'ttyrecgenerator' para generar videos"

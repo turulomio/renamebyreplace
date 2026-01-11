@@ -1,0 +1,66 @@
+# French translations for PACKAGE package.
+# Copyright (C) 2018-2026 Mariano Muñoz
+# This file is distributed under the same license as the PACKAGE package.
+# Turulomio <turulomio@yahoo.es>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: renamebyreplace 0.2.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-11 06:43+0100\n"
+"PO-Revision-Date: 2026-01-11 06:45+0100\n"
+"Last-Translator: Turulomio <turulomio@yahoo.es>\n"
+"Language-Team: French\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Rename files searching substrings in filenames"
+msgstr "Renommer les fichiers en cherchant des sous-chaînes dans les noms de fichiers"
+
+msgid "String to search"
+msgstr "Chaîne à rechercher"
+
+msgid "String to replace"
+msgstr "Chaîne de remplacement"
+
+msgid "Renames the files"
+msgstr "Renomme les fichiers"
+
+msgid "Undo replace command"
+msgstr "Annuler la commande de remplacement"
+
+msgid "Changes have been made ;)."
+msgstr "Les modifications ont été effectuées ;)."
+
+msgid "Developed by Mariano Muñoz 2018-{}"
+msgstr "Développé par Mariano Muñoz 2018-{}"
+
+msgid "New Release:"
+msgstr "Nouvelle sortie :"
+
+msgid "  * Create a new issue and its branch in Github"
+msgstr "  * Créer une nouvelle issue et sa branche sur Github"
+
+msgid "  * Change to this branch pasting suggested code in Github"
+msgstr "  * Basculer sur cette branche en collant le code suggéré sur Github"
+
+msgid "  * Change version and date in __init__.py"
+msgstr "  * Changer la version et la date dans __init__.py"
+
+msgid "  * Make a pull request to main branch"
+msgstr "  * Faire une pull request vers la branche main"
+
+msgid "  * Make a new tag in github"
+msgstr " * Faire un nouveau tag dans GitHub"
+
+msgid "  * Create a new gentoo ebuild with the new version and install it"
+msgstr "  * Créer un nouvel ebuild Gentoo avec la nouvelle version et l'installer"
+
+msgid "  * Upload to portage repository"
+msgstr " * Uploader au dépôt de portage"
+
+msgid "You need ttyrecgenerator installed to generate videos"
+msgstr "Il faut installer ttyrecgenerator pour générer des vidéos"
